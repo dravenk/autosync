@@ -1,0 +1,11 @@
+version: '3'
+services:
+  autosync:
+    container_name: autosync
+    build:
+      dockerfile: Dockerfile
+      context: .
+    restart: always
+    volumes:
+      - ./sourcedir:/app/sourcedir
+      - ./backupdir:/app/backupdir
