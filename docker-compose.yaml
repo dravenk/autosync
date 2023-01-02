@@ -7,5 +7,5 @@ services:
       context: .
     restart: always
     volumes:
-      - ./sourcedir:/app/sourcedir
-      - ./backupdir:/app/backupdir
+      - ${SOURCEDIR}:/app/sourcedir
+      - ${BACKUPDIR}:/app/backupdir
